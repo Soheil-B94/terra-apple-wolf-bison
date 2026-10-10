@@ -1,0 +1,101 @@
+@import "tailwindcss";
+
+@theme {
+  --font-sans: "Figtree", ui-sans-serif, system-ui, sans-serif;
+  --font-display: "Fraunces", "Iowan Old Style", "Palatino Linotype", Palatino,
+    serif;
+
+  --color-bg: #0b0b0c;
+  --color-bg-elevated: #141416;
+  --color-bg-subtle: #1c1c1f;
+  --color-bg-mute: #26262b;
+  --color-fg: #f1efe8;
+  --color-fg-muted: #8e8b84;
+  --color-fg-subtle: #6a6761;
+  --color-accent: #c5c9d0;
+  --color-accent-fg: #0b0b0c;
+  --color-border: rgb(241 239 232 / 12%);
+  --color-border-strong: rgb(241 239 232 / 22%);
+  --color-key-white: #ebe6da;
+  --color-key-white-fg: #1a1916;
+  --color-key-black: #1a1918;
+  --color-key-black-fg: #ebe6da;
+  --color-key-active: #c5c9d0;
+  --color-key-active-fg: #0b0b0c;
+  --color-danger: #c45c4a;
+
+  --radius-xs: 4px;
+  --radius-sm: 8px;
+  --radius-md: 12px;
+  --radius-lg: 16px;
+  --radius-xl: 24px;
+  --radius-2xl: 32px;
+
+  --shadow-soft: 0 1px 0 rgb(241 239 232 / 4%), 0 18px 48px rgb(0 0 0 / 40%);
+}
+
+@layer base {
+  html {
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+  }
+
+  html,
+  body,
+  #app {
+    min-height: 100dvh;
+    background: var(--color-bg);
+    color: var(--color-fg);
+    overflow-x: hidden;
+  }
+
+  body {
+    font-family: var(--font-sans);
+    line-height: 1.5;
+  }
+
+  button:not(:disabled),
+  [role="button"]:not(:disabled) {
+    cursor: pointer;
+  }
+
+  h1,
+  h2,
+  h3 {
+    text-wrap: balance;
+  }
+
+  p {
+    text-wrap: pretty;
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+  font-optical-sizing: auto;
+}
+
+.piano-scroll {
+  scrollbar-width: thin;
+  scrollbar-color: var(--color-bg-mute) transparent;
+}
+
+.piano-scroll::-webkit-scrollbar {
+  height: 6px;
+}
+
+.piano-scroll::-webkit-scrollbar-thumb {
+  background: var(--color-bg-mute);
+  border-radius: 99px;
+}

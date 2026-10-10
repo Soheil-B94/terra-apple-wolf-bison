@@ -1,0 +1,38 @@
+{
+  "url": "http://127.0.0.1:8081/",
+  "viewports": {
+    "desktop": {
+      "width": 1280,
+      "height": 800,
+      "status": 200,
+      "title": "Resonance",
+      "hasCanvas": false,
+      "bodyTextLen": 813,
+      "bodyTextHash": "22d980a3f7248f54cf11cbb571b212edc261e752f96ce8db8672f7e9377bacb7",
+      "bodyTextPrefix": "Resonance Chord studio Oct 3 CURRENT CHORD C C R E 3 G 5 Root 1s",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built.png"
+    },
+    "mobile": {
+      "width": 390,
+      "height": 844,
+      "status": 200,
+      "title": "Resonance",
+      "hasCanvas": false,
+      "bodyTextLen": 789,
+      "bodyTextHash": "cf617d73892168b4435587e02be0040bea0c995c40b2f65fa639cdb08b1048a1",
+      "bodyTextPrefix": "Resonance Chord studio Oct 3 CURRENT CHORD C C R E 3 G 5 Root 1s",
+      "horizontalOverflow": false,
+      "consoleErrors": [],
+      "pageErrors": [],
+      "screenshot": "/workspace/screenshots/app-builder-built-mobile.png"
+    }
+  },
+  "brandWarnings": [],
+  "authWarnings": [],
+  "verdictFile": "/workspace/screenshots/app-builder-built.json",
+  "divergesFromBaseline": false,
+  "baselineReasons": []
+}
